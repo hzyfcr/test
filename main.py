@@ -36,7 +36,7 @@ def get_center(j,dst,a):#逆时针a=0为外圈，为其他为内圈；顺时针�
     #print(direction)
     return direction
 # 打开摄像头，图像尺寸640*480（长*高），opencv存储值为480*640（行*列）
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(1)#树莓派上使用改成0，电脑自带一个摄像头故为1
 fourcc = cv2.VideoWriter_fourcc('M', 'J', 'P', 'G')
 cap.set(cv2.CAP_PROP_FOURCC, fourcc)
 WindowName = 'threshold'
